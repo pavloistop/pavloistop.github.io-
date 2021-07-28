@@ -1,0 +1,250 @@
+.container{
+  width: 1440px;
+  margin: 0 auto;
+}
+/*menu start*/
+.menu__img{
+	width: 300px;
+}
+.menu__p1{
+	font-size: 30px;
+	color: #9F9F9F;
+}
+.menu__p2{
+	font-size: 30px;
+	display: flex;
+	color: #9F9F9F;
+}
+.menu__p3{
+	font-size: 30px;
+	color: #9F9F9F;
+}
+.menu__p4{
+	font-size: 30px;
+	color: #50BA8D;
+	margin-top: 20px;
+}
+.menu a{
+	text-decoration: none;
+}
+.menu{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+.menu__box{
+	width: 45%;
+	display: flex;
+	justify-content: space-between;
+}
+.menu__box__item{
+	background-image: url(../img/country/active_pages_border.png);
+	width: 160px;
+	background-size: 100%;
+	display: flex;
+	justify-content: center;
+  align-items: center;
+	padding-right: 5px;
+	margin-top: 5px; 
+	align-items: center;
+	background-repeat: no-repeat;
+}
+/*menu end*/
+
+/*burger-menu start*/
+.hamburger-menu{
+  display: none;
+}
+#menu__toggle {
+  opacity: 0;
+}
+.menu__btn {
+  display: flex;
+  align-items: center;  
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 1;
+}
+.hamburger__menu__box {
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 80px 0;
+  list-style: none;
+  text-align: center;
+  background-color: #ECEFF1;
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+}
+.menu__item {
+  display: block;
+  padding: 12px 24px;
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.menu__item:hover {
+  background-color: #CFD8DC;
+}
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #F62B4C;
+  transition: 1s;
+}
+.menu__btn > span::before {
+  content: '';
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: '';
+  top: 8px;
+}
+#menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .hamburger__menu__box {
+  visibility: visible;
+  left: 0;
+}
+/*burger-menu end*/
+
+/*header start*/
+.header__img{
+  width: 80%;
+  display: flex;
+}
+.header__p1{
+  width: 400px;
+  font-size: 23px;
+}
+.header__p2{
+  font-size: 23px;
+  color: #9F9F9F;
+  align-self: center;
+}
+.header{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.header__box{
+  display: flex;
+  flex-direction: column;
+}
+.menu__img2{
+  width: 145px;
+}
+.header__img1{
+  width: 65%;
+}
+/*header end*/
+
+/*footer start*/
+.footer{
+  width: 100%;
+  background-image: url(../img/plane.png);
+  height: 1000px;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+.footer__all__p{
+  position: absolute;
+  left: 18.76%;
+  right: 19.33%;
+  top: 7.19%;
+  bottom: 88.78%;
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  font-family: Rouge Script;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 56px;
+  color: #000000;
+}
+.footer__p1,.footer__p2,.footer__p3,.footer__p4{
+  font-family: Rouge Script;
+  font-size: 40px;
+  line-height: 56px;
+  color: #000000;
+}
+.footer__info{
+  margin-top: 50px;
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+.footer__p1{
+  font-size: 30px;
+  color: #9F9F9F;
+}
+.footer__p2{
+  font-size: 30px;
+  color: #9F9F9F;
+}
+.footer__p3{
+  font-size: 30px;
+  color: #9F9F9F;
+}
+.footer__p4{
+  color: #50BA8D;
+  font-size: 30px;
+  margin-top: 15px;
+}
+.footer a{
+  text-decoration: none;
+  font-size: 30px;
+}
+.footer__icons{
+  margin-top: 50px;
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+}
+.footer__box__item{
+  background-image: url(../img/country/active_pages_border.png);
+  width: 160px;
+  background-size: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  padding-right: 10px; 
+  background-repeat: no-repeat;
+}
+.footer__component1,.footer__component2,.footer__component3,.footer__component4{
+  width: 70px;
+}
+.footer__border{
+  width: 220px;
+  height: 90px;
+}
+/*footer end*/
